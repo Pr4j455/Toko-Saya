@@ -63,6 +63,7 @@
   padding-right: 20%;
   padding-top: 30px;
   padding-bottom: 20px;
+  height: 100vh;
 }
 
 .hero-content {
@@ -73,6 +74,10 @@
   color: black;
   text-decoration: #f49c5a;
   background-color: #f49c5a;
+}
+
+.hero-image img {
+  width: 500px;
 }
 
 .about-image {
@@ -124,8 +129,41 @@ button {
 }
 
 .about-content img {
-  width: 100px;
+  width: 200px;
   position: absolute;
   top: 600px;
   left: 300px;
+}
+
+@media screen and (max-width: 670px) {
+  .navlink {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    font-size: 20px;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  button {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .hero-image img {
+    width: 350px;
+  }
+  .hero-content img {
+    width: 50px;
+    position: absolute;
+    top: 230px;
+    left: 5px;
+  }
 }
